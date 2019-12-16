@@ -8,7 +8,7 @@ public class TestarPedido {
 		
 		ItemPedido ip = new ItemPedido(p, 2);
 		
-		Pedido pd = new Pedido( 1, "Dinheiro" );
+		Pedido pd = new Pedido( 1, FormaPagamentoEnum.DINHEIRO );
 		pd.itens.add(ip);
 		
 		System.out.println(pd.totalizar());
